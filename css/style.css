@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.riga {
+    height: 50px;
+    display: flex;
+    border: 1px solid black;
+}
+
+.riga:not(:last-child) {
+    border-bottom: transparent
+}
+
+.col {
+    border-right: 1px solid black;
+    flex: 1 1 auto;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col:last-child {
+    border-right: transparent
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-green {
+    background-color: green;
+}

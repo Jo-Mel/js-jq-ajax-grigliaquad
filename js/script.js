@@ -1,5 +1,10 @@
 $(document).ready(function () {
-  $(".col").click(function () {
+  for (var i = 0; i < 36; i++) {
+    var quadrato = $(".template .square").clone();
+    $(".griglia").append(quadrato);
+  }
+
+  $(".square").click(function () {
     var box = $(this);
 
     if (box.text() !== "") {
